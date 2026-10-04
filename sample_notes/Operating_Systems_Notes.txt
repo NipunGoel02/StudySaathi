@@ -1,0 +1,23 @@
+OPERATING SYSTEMS: CORE CONCEPTS & EXAM REVISION
+
+1. Process Management:
+A process is a program in execution. It consists of the program code, program counter, stack, data section, and heap.
+- Process States: New, Ready, Running, Waiting, Terminated.
+- Process Control Block (PCB): Contains PID, Program Counter, CPU registers, memory management limits, and open file lists.
+- Context Switching: The mechanism to save the state of the current process and load the saved state of another process.
+
+2. Process Synchronization:
+- Critical Section Problem: Code segment that accesses shared variables or resources.
+- Three requirements for a valid solution: Mutual Exclusion, Progress, and Bounded Waiting.
+- Semaphore: An integer variable accessed only via wait() (P) and signal() (V) operations.
+  - Binary Semaphore (Mutex): Ranges between 0 and 1.
+  - Counting Semaphore: Value can span over an unrestricted domain.
+- Deadlock: A condition where a set of processes are blocked because each process is holding a resource and waiting for another resource held by some other process.
+- 4 Coffman Conditions: Mutual Exclusion, Hold and Wait, No Preemption, Circular Wait.
+
+3. Memory Management:
+- Paging: Non-contiguous memory allocation technique dividing physical memory into fixed-sized frames and logical memory into pages of the same size.
+- Page Table: Maps logical pages to physical frames.
+- Translation Lookaside Buffer (TLB): High-speed associative cache that stores recently used page table entries to minimize memory access delay.
+- Virtual Memory: Allows the execution of processes not entirely in physical RAM.
+- Page Replacement Algorithms: FIFO, Optimal (OPT), and Least Recently Used (LRU).
